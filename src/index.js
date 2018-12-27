@@ -109,7 +109,7 @@ class Images extends React.Component {
 	}
 
 	render() {
-		return <div>{this.state.imgList}</div>	
+		return <div className='wrapper'>{this.state.imgList}</div>	
 	}
 }
 
