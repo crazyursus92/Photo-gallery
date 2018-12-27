@@ -83,6 +83,8 @@ ul, li {
 img {
    height: 300px;
    width: auto;
+   cursor: pointer;
+   
 }
 
 .full-image {
