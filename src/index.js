@@ -4,7 +4,7 @@ import './index.css';
 import Images from './components/Images';
 import List from './components/List';
 
-const apiLocation = 'https://api.unsplash.com/';
+const url = 'https://api.unsplash.com/';
 const userAccessKey = '/?client_id=1c9cdfe7008e8accf5df7453bf2548202bc55308c810ec1ff83bdefcf3afd991';
 
 class App extends React.Component {
@@ -36,7 +36,7 @@ class App extends React.Component {
 
 // Получение данных от сервера
 export function getData(object) {
-	let objectLocation = apiLocation + object + userAccessKey;
+	let objectLocation = url + object + userAccessKey;
 
 	return fetch(objectLocation)
 			.then(res => res.json())
